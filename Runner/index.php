@@ -9,10 +9,10 @@
 		$sql = "INSERT INTO runs values (NULL, '" . $RunDate . "','" . $RunDistance . "','". $RunComment. "');";
 		// echo $sql;
 		
-		if ($comm->query($sql) === TRUE) 
+		if ($conn->query($sql) === TRUE) 
 		{	// echo "New Record Created Successfully";
 		} else {
-				echo "Error: ". $sql . "<br>" . $comm->error;
+				echo "Error: ". $sql . "<br>" . $conn->error;
 		}
 		
 		header("Refresh");
