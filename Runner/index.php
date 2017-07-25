@@ -9,7 +9,7 @@
 		$sql = "INSERT INTO runs values (NULL, '" . $RunDate . "','" . $RunDistance . "','". $RunComment. "');";
 		// echo $sql;
 		
-		if ($comm->query($sql) == TRUE) 
+		if ($comm->query($sql) === TRUE) 
 		{	// echo "New Record Created Successfully";
 		} else {
 				echo "Error: ". $sql . "<br>" . $comm->error;
